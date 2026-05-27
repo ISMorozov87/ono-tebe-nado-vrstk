@@ -33,7 +33,7 @@ blockquote {
 
 .header_logo {
   width: 148px;
-  height: 105px;
+  height: auto;
   top: 92px;
   left: 478px;
 }
@@ -264,6 +264,7 @@ blockquote {
   font-weight: 700;
   line-height: 120%;
   text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
 .text_on_card {
@@ -299,7 +300,7 @@ blockquote {
 
 .auction_logo_image {
   width: 148px;
-  height: 114px;
+  height: auto;
 }
 
 .auction_content {
@@ -362,6 +363,7 @@ blockquote {
 .footer__social-list {
   display: flex;
   gap: 48px;
+  list-style-type: none;
  
 }
 
