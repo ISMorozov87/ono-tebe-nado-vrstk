@@ -1,8 +1,9 @@
 body {
   margin: 0;
   background-color: #FFFFFF;
-  font-family: Raleway-Bold, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   width: 1100px;
+
 }
 
 .header {
@@ -28,8 +29,10 @@ body {
 .header_menu {
   display: flex;
   justify-self: center;
-  width: 394px;
-  height: 22px;
+  width: 401px;
+  height: 2px;
+  margin-right: -0.2em;
+  margin-top: -1.3em;
 }
 
 .contact {
@@ -37,39 +40,34 @@ body {
   font-size: 30px;
   line-height: 24.3px;
   letter-spacing: 0.18px;
-  font-family: "Raleway";
+  font-family: "Raleway", Arial, sans-serif;
   list-style-type: none;
   font-style: normal; 
   width: 394px;
-
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem; 
-  font-style: normal;
-  padding-left: 231px; 
-  font-family: "Raleway", sans-serif;
-}
-
-.address-info {
-  gap: 0.5rem; 
-  font-style: normal;
-  font-family: "Raleway", sans-serif;
 }
 
 .address {
-  padding-left: 185px;
-  font-size: 18px;
-  gap: 0.5rem; 
-  line-height: 24.3px;
-  letter-spacing: 0.18px;
-  font-family: "Raleway", sans-serif;
-  list-style-type: none;
-  font-style: normal; 
-
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-style: normal;
+  padding-left: 192px;
+  font-family: "Raleway", Arial, sans-serif;
+  margin-left: -0.3em;
+  margin-top: -0.3em;
 }
+
+
+.address-info {
+  gap: 49px;
+  font-style: normal;
+  font-size: 18px;
+  font-family: "Raleway", Arial, sans-serif;
+  margin-top: 0.1em; 
+  line-height: 24px; 
+}
+
+
 
 .menu_links {
   display: flex;
@@ -109,41 +107,40 @@ body {
   z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
-  
+  height: 756px;
 }
 
 .cover_title {
-  display: flex;
-  justify-content: space-between;
-  padding: 175px 45px 147px;
-  letter-spacing: 29px;
-  flex-direction: column;
-  gap: 20px; 
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 175px 45px 147px;
+    letter-spacing: 32px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 98%;
 }
 
 
 .accent-span {
   text-align: left;
   margin-bottom: 25px;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.2em;
 }   
 
 .text-center {
   text-align: center;
-  margin-right: -0.4em;
-
+  margin-right: -0.3em;
 }
 
 .text-right {
   text-align: right;
   display: block;
-  margin-right: -0.2em;
-  margin-bottom: -0.4em;
+  margin-right: -0.3em;
+  margin-bottom: -0.3em;
 }
 
 .overlay {
@@ -159,16 +156,17 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px 55px 78px;
-  gap: 79px;
-
+  margin-right: 0.5em;
 }
 
 .cover_text {
   font-size: 21px;
   font-weight: 400;
-  line-height: 28px;
-  word-spacing: 18px;
+  word-spacing: 5px;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: -39px;
+  margin-top: 7px;
 }
 
 .button {
@@ -177,13 +175,15 @@ body {
   word-spacing: 5px;
   border: 1px solid white;
   background-color: transparent;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   color: #fff;
   font-size: 22px;
   line-height: 51px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
+  margin-right: -0.35em;
+  margin-bottom: -0.2em;
 }
 
 .title_lots {
@@ -197,23 +197,26 @@ body {
 }
 
 .container_lots {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  gap: 25px;
-  justify-content: flex-start; 
-  padding: 0; 
-  margin-bottom: 40px;
-  margin: 0 auto;
-  margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 25px;
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 40px;
+    margin: 0 auto;
+    margin-left: 24px;
+    height: 599px;
+    margin-top: 3px;
 }
 
 .container_more {
-  width: 250px;
+  width: 270px;
   left: 40px;
   top: 700px;
   text-align: left;
-  margin-top: 100px;
+  margin-top: 1.7em;
+  margin-left: 2.1em;
 }
 
 .more {
@@ -221,7 +224,7 @@ body {
   text-underline-offset: 3px;
   margin: 0 30px;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.2; 
   top: 700px;
@@ -229,13 +232,14 @@ body {
   text-decoration: underline; 
   background: transparent; 
   border: none; 
+  
 }
-
 
 .card_lots {
   max-width: 334px;
   min-height: 563px;
   flex-grow: 1;
+  
 }
 
 .card {
@@ -270,7 +274,8 @@ body {
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
-  
+  margin-left: 0.1em;
+  margin-top: -0.1em;
 }
 
 .text_on_card {
@@ -279,10 +284,13 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  margin-left: 0em;
+  margin-bottom: 0.2em;
 }
 
 .auction {
   margin-top: 148px;
+ 
 }
 
 .auction_container {
@@ -290,6 +298,7 @@ body {
   grid-template-columns: 334px repeat(1, 1fr);
   gap: 25px;
   padding: 34px 24px 0px;
+
 }
 
 
@@ -302,6 +311,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -1.8em;
 }
 
 .auction_logo_image {
@@ -313,14 +323,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-top: 100px;
+  padding-top: 91px;
 }
 
 .title_auction {
   color: black;
   font-size: 40px;
   font-weight: 700;
-  line-height: 46.96px;
+  line-height: 18.96px;
   text-transform: uppercase;
 }
 
@@ -332,6 +342,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 9px;
 }
 
 .text_up {
@@ -358,6 +369,9 @@ body {
 
 .footer_menu {
   padding-left: 35px;
+  margin-left: -4.3em;
+  margin-top: -2.0em;
+ 
 }
 
 .footer_menu_links {
@@ -368,8 +382,10 @@ body {
 
 .footer__social-list {
   display: flex;
-  gap: 48px;
+  gap: 49px;
   list-style-type: none;
+  margin-left: -2.4em;
+  margin-top: -2.8em;
  
 }
 
@@ -380,6 +396,7 @@ body {
 .footer__social-icon {
   width: 48px;
   height: 48px;
+
 }
 
 .footer_links {
@@ -388,6 +405,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
+
 }
 
 .footer_main {
