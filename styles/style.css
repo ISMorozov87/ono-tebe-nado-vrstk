@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: #FFFFFF;
   font-family: "Raleway", Arial, sans-serif;
   width: 1100px;
@@ -14,8 +14,7 @@ body {
   padding-left: 24px;
   padding-bottom: 92px;
   padding-right: 24px;
-  width: 1,100px;
-  height: 293px;
+  width: 1100px;
   font-size: 18px;
 }
 
@@ -31,43 +30,31 @@ body {
   justify-self: center;
   width: 401px;
   height: 2px;
-  margin-right: -0.2em;
-  margin-top: -1.3em;
-}
+  margin-left: 0.2em;
+  margin-bottom: 1.3em;
+  background-image: url(../images/footer.png);
 
-.contact {
-  padding-left: 185px;
-  font-size: 30px;
-  line-height: 24.3px;
-  letter-spacing: 0.18px;
-  font-family: "Raleway", Arial, sans-serif;
-  list-style-type: none;
-  font-style: normal; 
-  width: 394px;
 }
-
-.address {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-style: normal;
-  padding-left: 192px;
-  font-family: "Raleway", Arial, sans-serif;
-  margin-left: -0.3em;
-  margin-top: -0.3em;
-}
-
 
 .address-info {
-  gap: 49px;
+  display: flex;
+  flex-direction: column;
   font-style: normal;
-  font-size: 18px;
+  padding-left: 186px;
   font-family: "Raleway", Arial, sans-serif;
-  margin-top: 0.1em; 
-  line-height: 24px; 
 }
 
+.address__item {
+  display: block;
+  font-size: 18px;
+  line-height: 1.35;
+  text-underline-position: under;
+}
 
+.text-link:hover {
+  background-color: #000000;
+  color: #FFF;
+}
 
 .menu_links {
   display: flex;
@@ -107,46 +94,44 @@ body {
   z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
-  height: 756px;
+  min-height: 756px;
 }
 
 .cover_title {
     display: flex;
     justify-content: space-between;
-    padding: 175px 45px 147px;
+    padding: 120px 47px 106px;
     letter-spacing: 32px;
     flex-direction: column;
-    gap: 15px;
     text-align: center;
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 700;
-    line-height: 98%;
+    line-height: 100%;
 }
 
 
 .accent-span {
   text-align: left;
-  margin-bottom: 25px;
-  margin-bottom: 0.2em;
+  margin-top: 0.5em;
 }   
 
 .text-center {
   text-align: center;
-  margin-right: -0.3em;
+  margin-left: 0.4em;
+  margin-top: 0.3em;
 }
 
 .text-right {
   text-align: right;
   display: block;
-  margin-right: -0.3em;
-  margin-bottom: -0.3em;
+  margin-left: 6.14em;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 
@@ -160,13 +145,11 @@ body {
 }
 
 .cover_text {
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 400;
-  word-spacing: 5px;
+  word-spacing: 13.5px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-left: -39px;
-  margin-top: 7px;
+  margin-top: 4px;
 }
 
 .button {
@@ -197,26 +180,40 @@ body {
 }
 
 .container_lots {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    gap: 25px;
-    justify-content: flex-start;
-    padding: 0;
-    margin-bottom: 40px;
-    margin: 0 auto;
-    margin-left: 24px;
-    height: 599px;
-    margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 25px;
+  justify-content: flex-start;
+  padding: 0;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-left: 24px;
+  margin-top: 3px;
 }
 
-.container_more {
-  width: 270px;
-  left: 40px;
-  top: 700px;
-  text-align: left;
-  margin-top: 1.7em;
-  margin-left: 2.1em;
+.lots__card-list {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  list-style: none;
+  margin-bottom: 40px;
+  margin-left: 24px;
+  height: 598px;
+  margin-top: 1px;
+  gap: 25px;
+}
+
+.lost__card-list-item {
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
 }
 
 .more {
@@ -226,21 +223,13 @@ body {
   color: black;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.2; 
-  top: 700px;
-  left: 40px;
-  text-decoration: underline; 
-  background: transparent; 
-  border: none; 
-  
+  line-height: 1.2;
+  margin-left: 3.2em;
+  text-decoration: underline;
+  background: transparent;
+  border: none;
 }
 
-.card_lots {
-  max-width: 334px;
-  min-height: 563px;
-  flex-grow: 1;
-  
-}
 
 .card {
   position: relative;
@@ -255,63 +244,65 @@ body {
   background-position: center;
 }
 
+.card__text {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .card_cinema {
   background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_book {
   background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .card_painting {
   background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_title {
-  color: white;
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  font-weight: bold;
   font-size: 22px;
-  font-weight: 700;
-  line-height: 120%;
+  line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
-  margin-left: 0.1em;
-  margin-top: -0.1em;
-}
-
-.text_on_card {
-  color: white;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  margin-left: 0em;
-  margin-bottom: 0.2em;
 }
 
 .auction {
-  margin-top: 148px;
- 
-}
+  margin-top: 137px;
+ }
 
 .auction_container {
   display: grid;
   grid-template-columns: 334px repeat(1, 1fr);
-  gap: 25px;
-  padding: 34px 24px 0px;
-
+  gap: 24px;
+  padding: 7px 27px 27px;
 }
 
-
 .auction_logo {
-  justify-self: center;
-  background-color: #000;
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -1.8em;
+justify-self: center;
+    background-color: #000;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17.8em;
 }
 
 .auction_logo_image {
@@ -320,10 +311,10 @@ body {
 }
 
 .auction_content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding-top: 91px;
+display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 116px;
 }
 
 .title_auction {
@@ -334,15 +325,16 @@ body {
   text-transform: uppercase;
 }
 
-
 .auction_text {
-  align-self: flex-start;
-  font-family: "Raleway", sans-serif;
-  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 5.5em;
+}
+
+.auction_text p {
   font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: 9px;
+  line-height: normal;
 }
 
 .text_up {
@@ -354,25 +346,31 @@ body {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: auto 1fr 200px;
-  padding: 180px 50px 88px;
-  gap: 140px;
-  align-items: center;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr 200px;
+    padding: 151px 50px 88px;
+    gap: 140px;
+    align-items: center;
+    justify-items: center;
 }
 
 .footer_address {
   font-style: normal;
-  padding-left: 0px; 
+  margin-bottom: 0.3em;
 }
 
 .footer_menu {
   padding-left: 35px;
-  margin-left: -4.3em;
-  margin-top: -2.0em;
+  margin-right: 4.3em;
+  margin-bottom: 2.0em;
  
 }
+
+.address__address-text {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
 
 .footer_menu_links {
   list-style-type: none;
@@ -384,8 +382,8 @@ body {
   display: flex;
   gap: 49px;
   list-style-type: none;
-  margin-left: -2.4em;
-  margin-top: -2.8em;
+  margin-right: 2.4em;
+  margin-bottom: 2.8em;
  
 }
 
